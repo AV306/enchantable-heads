@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.example.mixin.client",
+	"package": "net.potato.enchantableheads.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"ExampleClientMixin"

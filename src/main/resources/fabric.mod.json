@@ -1,37 +1,36 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"id": "enchantableheads",
+	"version": "1.0.0",
+	"name": "Enchantable Heads",
+	"description": "Makes all heads enchantable in Minecraft",
 	"authors": [
-		"Me!"
+		"Potato3218"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/YeetBot3736/enchantable-heads"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "GNU v3.0",
+	"icon": "assets/enchantableheads/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"net.potato.enchantableheads.EnchantableHeads"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"net.potato.enchantableheads.EnchantableHeadsClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"enchantableheads.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "enchantableheads.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
 		"fabricloader": ">=0.15.10",
-		"minecraft": "~1.20.6",
+		"minecraft": "~1.20.4",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
