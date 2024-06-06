@@ -1,9 +1,9 @@
 {
 	"required": true,
 	"package": "net.potato.enchantableheads.mixin",
-	"compatibilityLevel": "JAVA_21",
+	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-      "ExampleMixin"
+		"EnchantmentMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
