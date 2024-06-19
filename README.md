@@ -1,9 +1,23 @@
-# Fabric Example Mod
+# Enchantable Heads
 
-## Setup
+Makes heads enchantable!
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## Configuration
 
-## License
+Config file is automatically created in `.minecraft/config/enchantableheads_config.properties`.
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Example contents:
+
+```
+allow_helmet_enchantments=true              # Allow helmet enchantments to be used
+
+allow_chestplate_enchantments=false         # Allow chestplate enchantments to be used
+
+allow_leggings_enchantments=false           # Allow leggings enchantments to be used
+
+allow_boots_enchantments=false              # Allow boots enchantments to be used
+
+allow_general_armor_enchantments=true       # Allow general armor enchantments to be used
+
+allow_non_armor_enchantments=false          # Allow non-armor enchantments to be used
+```
