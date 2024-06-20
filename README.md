@@ -1,6 +1,6 @@
 # Enchantable Heads
 
-Makes heads enchantable!
+Makes player heads enchantable!
 
 ## Configuration
 

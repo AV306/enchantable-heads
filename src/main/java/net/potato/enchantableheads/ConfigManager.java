@@ -54,8 +54,11 @@ public class ConfigManager {
 
                 try {
                     // Saw someone get locale problems when parsing decimal places (comma vs period) once, not taking the chance
+                    // Get the field this config line wants to set
                     Field f = EnchantableHeads.class.getDeclaredField(entry[0].toUpperCase(Locale.ENGLISH));
 
+                    // Assign the value to the field, based on type
+                    // Add more else-ifs for more types
                     if (f.getType().isAssignableFrom(short.class)) {
                         // Short value
                         f.setShort(null, Short.parseShort(entry[1].replace("0x", ""), 16));
@@ -69,19 +72,19 @@ public class ConfigManager {
                     } else {
                         EnchantableHeads.LOGGER.error("Unrecognised data type for config entry {}", line);
                     }
-                } catch (ArrayIndexOutOfBoundsException oobe) {
+                } catch (ArrayIndexOutOfBoundsException oobe) { // Most likely cause: mising config value
                     EnchantableHeads.LOGGER.warn("Malformed config entry: {}", line);
-                } catch (NoSuchFieldException nsfe) {
+                } catch (NoSuchFieldException nsfe) { // Most likely cause: invalid field name
                     EnchantableHeads.LOGGER.warn("No matching field found for config entry: {}", line);
-                } catch (IllegalAccessException illegal) {
+                } catch (IllegalAccessException illegal) { // Shouldn't happen unless I messed up
                     EnchantableHeads.LOGGER.error("Could not set field for: {}", line);
                     illegal.printStackTrace();
                 }
             }
-        } catch (IOException ioe) {
+        } catch (IOException ioe) { // WHo knows? Anything is possible
             EnchantableHeads.LOGGER.error("IOException while reading config file: {}", ioe.getMessage());
         }
 
-        EnchantableHeads.LOGGER.info( "Done reading config file!");
+        EnchantableHeads.LOGGER.info("Done reading config file!");
     }
 }
