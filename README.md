@@ -1,12 +1,14 @@
 # Enchantable Heads
 
-Makes player heads enchantable!
+Makes player heads enchantable on an anvil!
+
+Fun fact: in vanilla Creative mode, you can actuslly enchant _anything_ with _any enchantment_ on an anvil. Anyone want iron ore with Sharpness 5, Unbreaking and Fortune 3?
 
 ## Configuration
 
-Config file is automatically created in `.minecraft/config/enchantableheads_config.properties`.
+A config file is automatically created in `.minecraft/config/enchantableheads_config.properties` with the magic of [LiteConfig](https://github.com/AV306/litecord)!
 
-Example contents:
+Example contents (scroll right for comments):
 
 ```
 allow_helmet_enchantments=true              # Allow helmet enchantments to be used
