@@ -6,7 +6,7 @@ Fun fact: in vanilla Creative mode, you can actually enchant _anything_ with _an
 
 ## Configuration
 
-A config file is automatically created in `.minecraft/config/enchantableheads_config.properties` with the magic of [LiteConfig](https://github.com/AV306/litecord)!
+A config file is automatically created in `.minecraft/config/enchantableheads_config.properties` with the magic of [LiteConfig](https://github.com/AV306/liteconfig)!
 
 Example contents (scroll right for comments):
 
