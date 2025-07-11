@@ -2,7 +2,7 @@
 
 Makes player heads enchantable on an anvil!
 
-Fun fact: in vanilla Creative mode, you can actuslly enchant _anything_ with _any enchantment_ on an anvil. Anyone want iron ore with Sharpness 5, Unbreaking and Fortune 3?
+Fun fact: in vanilla Creative mode, you can actually enchant _anything_ with _any enchantment_ on an anvil. Anyone want iron ore with Sharpness 5, Unbreaking and Fortune 3?
 
 ## Configuration
 
